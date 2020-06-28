@@ -1,0 +1,38 @@
+Algoritmo "altura_e_peso"
+
+Var
+ nome1, nome2 : caractere
+ altura1, altura2, peso1, peso2: real
+
+Inicio
+   escreval("Digite os dados da primeira pessoa")
+   escreva("Nome: ")
+   leia(nome1)
+   escreva("Altura: ")
+   leia(altura1)
+   escreva("Peso: ")
+   leia(peso1)
+   escreval
+
+   escreval("Digite os dados da segunda pessoa")
+   escreva("Nome: ")
+   leia(nome2)
+   escreva("Altura: ")
+   leia(altura2)
+   escreva("Peso: ")
+   leia(peso2)
+   escreval
+   
+   se peso1 > peso2 entao
+      escreval("A pessoa mais pesada é: ",nome1, " com ", peso1:4:2, "kg")
+   senao
+      escreval("A pessoa mais pesada é: ",nome2, " com ", peso2:4:2, "kg")
+   fimse
+   
+   se altura1 > altura2 entao
+      escreval("A pessoa mais alta é: ",nome1, " com ", altura1:4:2, "m")
+   senao
+      escreval("A pessoa mais alta é: ",nome2, " com ", altura2:4:2, "m")
+   fimse
+   
+Fimalgoritmo
