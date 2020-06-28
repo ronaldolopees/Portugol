@@ -1,0 +1,64 @@
+Algoritmo "calculadora"
+
+Var
+   numero1, numero2, opcao: inteiro
+   operacao : real
+
+
+Inicio
+
+        escreval("Opções: ")
+        escreval("1 - Soma")
+        escreval("2 - Subtração")
+        escreval("3 - Multiplicação")
+        escreval("4 - Divisão")
+        escreval("0 - Sair")
+        escreval
+        escreva("Digite qual a operação deseja realizar: ")
+         leia(opcao)
+          
+      se (opcao > 4) ou (opcao < 0)  entao
+         escreval("Operação inválida. Por gentileza, reinicie o processo.")
+        senao
+        se opcao = 0 entao
+         escreval("Finalizado")
+        senao
+         escreva("Digite o primeiro número: ")
+          leia(numero1)
+         escreva("Digite o segundo número: ")
+          leia(numero2)
+   
+        escolha opcao
+                caso 1
+                  operacao <- numero1 + numero2
+                caso 2
+                  operacao <- numero1 - numero2
+                caso 3
+                  operacao <- numero1 * numero2
+                caso 4
+                     se numero2 > 0 entao
+                       operacao <- numero1 / numero2
+                     senao
+                          se numero2 < 1 entao
+                          escreval("Dados inválidos. O segundo número deve se maior que 0(zero).")
+                          repita
+                            escreval
+                            escreva("Digite o segundo número: ")
+                            leia(numero2)
+                          ate numero2 > 0
+                            operacao <- numero1 / numero2
+
+                           fimse
+                      fimse
+                outrocaso
+                  escreval("Dados inválidos. Por gentileza, reinicie o processo.")
+        fimescolha
+   
+        escreval
+        escreval("O resultado da operação é: ", operacao)
+        fimse
+      fimse
+
+   
+
+Fimalgoritmo
